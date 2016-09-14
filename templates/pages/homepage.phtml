@@ -1,0 +1,40 @@
+{% extends "master_page.phtml" %}
+
+{% block body %}
+{{ parent() }}
+<body id="app">
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+        <thead>
+        <tr>
+            <th>User Id</th>
+            <th class="mdl-data-table__cell--non-numeric">Fullname</th>
+            <th>Adventure Id</th>
+            <th class="mdl-data-table__cell--non-numeric">Adv. name</th>
+            <th class="mdl-data-table__cell--non-numeric">Adv. desc</th>
+            <th class="mdl-data-table__cell--non-numeric">Adv. price($)</th>
+            <th>Adv.Session Id</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="user in users">
+            <td>1</td>
+
+            <!-- Verbatim tags allows the twig template engine to ignore the tags in order to vuejs work -->
+            {% verbatim %}
+            <td> {{ user.name }} </td>
+            {% endverbatim %}
+
+            <td>1</td>
+            <td>Dummy</td>
+            <td>description</td>
+            <td>7.00</td>
+            <td>1</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+
+<script src="js/landing_page.js"></script>
+
+{% endblock %}
+

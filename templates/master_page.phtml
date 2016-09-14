@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Adventure Aide</title>
+    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+{% include '/partials/header.phtml' %}
+{% include '/partials/top_bar.phtml' %}
+
+{% include '/partials/errors.phtml' %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+{% block body %} {% endblock %}
+
+{% include '/partials/footer.phtml' %}
+
+{% include '/partials/global_includes.phtml' %}
+
+</html>
